@@ -1,0 +1,66 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title> 
+    <link rel="stylesheet" href="aboba.css">
+   </head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+          Registration now
+
+        </div>
+        <form action="login.html">
+           <div class="field">
+              <input type="text" required>
+              <label>Login</label>
+              <span class="error">Please enter your login</span>
+           </div>
+           <div class="field">
+            <input type="text" pattern="^(?=.*[a-z])([@])(?=.*[a-z])([.])(?=.*[a-z]).{5,}$" required>
+            <label>Email Address</label>
+            <span class="error">Please enter a valid email address</span>
+         </div>
+         <div class="field">
+            <input type="tel" pattern="[0-9]{11}" required>
+            <label>Phone</label>
+            <span class="error">Please enter a phone-number</span>
+         </div>
+           <div class="field">
+              <input type="create-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$" required>
+              <label>Create password</label>
+              <span class="error">Please enter a valid password</span>
+           </div>
+           <div class="field">
+            <input type="confirm-password" required>
+            <label>Confirm password</label>
+            </div>
+            <div class="content">
+         <label>Gender:</label>
+         <input type="radio" value="gender" id="remember-me" name="remember-me">
+        <label for="remember-me">Male</label><br>
+        <input type="radio" value="gender" id="remember-me" name="remember-me">
+        <label for="remember-me">Female</label><br>
+        <input type="radio" value="gender" id="remember-me" name="remember-me">
+        <label for="remember-me">Other</label><br>
+         </div>
+         <div>
+     <input type="file" id="fileinput" />
+     </div>
+           <div class="content">
+              <div class="checkbox">
+                 <input type="checkbox" id="remember-me">
+                 <label for="remember-me">i accept all terms & privacy policy</label>
+              </div>
+           </div>
+           <div class="field">
+              <input type="submit" value="Register Now">
+           </div>
+           <div class="signup-link">
+              Already have an account? <a href="login.html">login now</a>
+           </div>
+        </form>
+     </div>
+</body>
+</html>

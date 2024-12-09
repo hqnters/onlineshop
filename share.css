@@ -1,0 +1,110 @@
+.menu {
+  z-index: 999;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu .share i.fa {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.menu .share:hover .submenu li {
+  opacity: 1;
+  top: -100px;
+  transform: rotate(0deg);
+  border-bottom: 1px dashed #ccc;
+  transition-delay: 0.08s;
+}
+
+.menu .share:hover .submenu li:nth-child(1) {
+  opacity: 1;
+  top: -100px;
+  transform: rotate(0deg);
+  border-bottom: 1px dashed #ccc;
+  transition-delay: 0.08s;
+}
+
+.menu .share:hover .submenu li:nth-child(2) {
+  opacity: 1;
+  top: -150px;
+  transform: rotate(0deg);
+  border-bottom: 1px dashed #ccc;
+  transition-delay: 0.16s;
+}
+
+.menu .share:hover .submenu li:nth-child(3) {
+  opacity: 1;
+  top: -200px;
+  transform: rotate(0deg);
+  border-bottom: 1px dashed #ccc;
+  transition-delay: 0.24s;
+}
+
+.menu .share:hover .submenu li:nth-child(4) {
+  opacity: 1;
+  top: -250px;
+  transform: rotate(0deg);
+  border-bottom: 1px dashed #ccc;
+  transition-delay: 0.32s;
+}
+
+.menu .share:hover .submenu li:nth-child(5) {
+  opacity: 1;
+  top: -300px;
+  transform: rotate(0deg);
+  border-bottom: 1px dashed #ccc;
+  transition-delay: 0.40s;
+}
+
+.menu .submenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.menu .submenu li {
+  transition: all ease-in-out 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.menu .submenu a {
+  color: #212121;
+  text-decoration: none;
+}
+
+.menu .submenu a:hover i.fa {
+  color: #fff;
+}
+
+.menu .submenu a.facebook:hover i.fa {
+  background-color: #3b5999;
+}
+
+.menu .submenu a.twitter:hover i.fa {
+  background-color: #55acee;
+}
+
+.menu .submenu a.googlePlus:hover i.fa {
+  background-color: #dd4b39;
+}
+
+.menu .submenu a.instagram:hover i.fa {
+  background-color: #e4405f;
+}
+
+.menu.bottomRight {
+  bottom: 10px;
+  right: 10px;
+}
