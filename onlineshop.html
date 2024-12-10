@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="azaa.css" >
+    <link rel="stylesheet" type="text/css" href="share.css" >
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <title>Nomad Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="onlineshop.html"><img src="logoblack.png" alt="NomadStore" width="150px" /></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li class="active"><a href="#" >Home</a></li>
+          <li class="static"><a href="#">Products &bigtriangledown;</a>
+            <ul>
+              <li style="margin-left: -32px; margin-right: 20px;"><a href="#">mens</a></li>
+              <li style="margin-left: -32px; margin-right: 20px;"><a href="#">womens</a></li>
+            </ul>
+          </li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px" /></a>
+      <img src="https://i.ibb.co/6XbqwjD/menu.png" alt="" class="menu-icon" />
+      <div class="w3-teal">
+        <button class="buttoncss1" class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()" >&#9776;</button>
+        </div>
+    </div>
+  </div>
+  <div style="max-height: 400px; height: auto; margin-left: auto; margin-right: auto;" id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img style="height: 300px; object-fit: cover;" src="https://static.tildacdn.pro/tild6639-6263-4633-a336-616465656566/Frame_113_3_1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img style="height: 300px; object-fit: cover;" src="https://static.tildacdn.pro/tild6135-6537-4934-a530-303738383863/_.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img style="height: 300px; object-fit: cover;" src="https://static.tildacdn.pro/tild3836-6261-4661-a635-613236303335/IMML7175.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+<div onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <button class="buttoncss" onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large"><img class="source" src="https://flaticons.net/icon.php?slug_category=mobile-application&slug_icon=close"></button>
+      
+      <h2>Nomad Store</h2>
+    </div>
+    <ul class="sidebar-links">
+      <h4>
+        <span>Menu</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="#" style="margin-left: -40px;">
+          <span class="material-symbols-outlined"> <img src="shop.png" width="30px"></span>shop</a>
+      </li>
+      <li>
+        <a href="https://globalnomadswear.com/men" style="margin-left: -40px;"><span class="material-symbols-outlined"> <img src="men.png" width="30px"></span>Mens</a>
+      </li>
+      <li>
+        <a href="https://globalnomadswear.com/women" style="margin-left: -40px;"><span class="material-symbols-outlined"> <img src="women.png" width="30px"> </span>Womens</a>
+      </li>
+      <h4>
+        <span>General</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="#"><span class="material-symbols-outlined" style="margin-left: -40px;"><img src="group.png" width="30px"> </span>Groups</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined" style="margin-left: -40px;"> <img src="return.png" width="30px"> </span>Return</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined" style="margin-left: -40px;"><img src="report.png" width="30px"></span>All Reports</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined" style="margin-left: -40px;"><img src="notifications.png" width="30px"> </span>Notifications</a>
+      </li>
+      <h4>
+        <span>Account</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="#"><span class="material-symbols-outlined" style="margin-left: -40px;"> <img src="profile.png" width="30px"></span>Profile</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined" style="margin-left: -40px;">  <img src="setings.png" width="30px"> </span>Settings</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined" style="margin-left: -40px;"> <img src="logout.png" width="30px">  </span>Logout</a>
+      </li>
+    </ul>
+    <div class="user-account">
+      <div class="user-profile">
+        <img src="profile.jpg" alt="Profile Image" />
+        <div class="user-detail">
+          <h3>Erazamat T.</h3>
+          <span>CS</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+  </div>
+
+  <div class="small-container">
+    <div class="row row-2">
+      <h2>All Products</h2>
+      <select>
+        <option value="">Default Shorting</option>
+        <option value="">Short by price</option>
+        <option value="">Short by popularity</option>
+        <option value="">Short by rating</option>
+        <option value="">Short by sale</option>
+      </select>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/men/tproduct/792507046-465057837892-longsliv-tatu">
+            <img src="https://optim.tildacdn.com/stor3038-3637-4436-b763-316661646330/-/format/webp/64123120.jpg" alt="" />
+        <h4 class="basic" style="font-size: 15px; margin-top: 5px;">Лонгслив-тату<span style="margin-left: 3px;" class="badge rounded-pill text-bg-danger">new</span></h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>14 990тенге</p></a>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/men/tproduct/792507046-603432888202-puhovik-neilonovii">
+        <img src="https://optim.tildacdn.com/stor3063-3136-4833-a165-393637643730/-/format/webp/34287383.jpg" alt="" />
+        <h4 style="font-size: 15px; margin-top: 5px;">Пуховик нейлоновый</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </a>
+        </div>
+        <p>125 990тенге</p>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/men/tproduct/792507046-513927670202-futbolka-oversaiz">
+        <img src="https://optim.tildacdn.com/stor3330-6437-4533-b661-663562373165/-/format/webp/70927474.jpg" alt="" />
+        <h4 style="font-size: 15px; margin-top: 5px;">Футболка Оверсайз</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p>12 990тенге</p>
+        </a>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/men/tproduct/792507046-773981282362-futbolka-stone-washed">
+        <img src="https://optim.tildacdn.com/stor3439-3933-4861-a430-646261306538/-/format/webp/28103241.jpg" alt="" />
+        <h4 style="font-size: 15px; margin-top: 5px;">Футболка Stone Washed</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>12 990тенге</p>
+    </a>
+    </div>
+  
+    <div class="row">
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/men/tproduct/792507046-566966539732-shorti-iz-futera">
+        <img src="https://optim.tildacdn.com/stor6136-6363-4834-b431-353462373435/-/format/webp/38906102.jpg" alt="" />
+        <h4 style="font-size: 15px; margin-top: 5px;">Шорты из футера</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>19 490тенге</p>
+    </a>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/women/tproduct/792506629-605845060302-steganii-chapan-samruk">
+        <img src="https://optim.tildacdn.com/stor3631-3134-4234-b361-336436653539/-/format/webp/75272221.jpg" alt="" />
+        <h4 style="font-size: 15px; margin-top: 5px;">Стеганый чапан Самрук</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>64 990тенге</p>
+    </a>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/women/tproduct/792506629-262560986562-rubashka-samruk">
+        <img src="https://optim.tildacdn.com/stor3564-3530-4662-b539-383234623532/-/format/webp/35936493.jpg" alt="" />
+        <h4 style=" font-size: 15px; margin-top: 5px;">Рубашка Самрук <span style="margin-left: 3px;" class="badge rounded-pill text-bg-danger">new</span></h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p>34 990тенге</p>
+    </a>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/women/tproduct/792506629-668326515562-sviter">
+        <img src="https://optim.tildacdn.com/stor6637-3065-4164-a336-356364353633/-/format/webp/13227607.jpg" alt="" />
+        <h4 style="font-size: 15px; margin-top: 5px;">Свитер <span style="margin-left: 3px;" class="badge rounded-pill text-bg-danger">new</span></h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>26 490тенге</p>
+    </a>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/men/tproduct/792507046-185271900782-kardigan-na-pugovitsah">
+        <img src="https://optim.tildacdn.com/stor6463-6461-4533-b436-333538313438/-/format/webp/61452289.jpg" alt="" />
+        <h4 style="font-size: 15px; margin-top: 5px;">Кардиган на пуговицах</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>33 990тенге</p>
+    </a>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/women/tproduct/792506629-377623721982-sviter-iz-viskozi">
+        <img src="https://optim.tildacdn.com/stor3139-6464-4634-a466-303864393131/-/format/webp/57709824.jpg" alt="" />
+        <h4 style="font-size: 15px; margin-top: 5px;">Свитер из вискозы</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>25 990тенге</p>
+    </a>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/women/tproduct/792506629-227542730932-plate-s-ornamentami">
+        <img src="https://optim.tildacdn.com/stor3933-6130-4833-b663-366133633031/-/format/webp/45087725.jpg" alt="" />
+        <h4 style=" font-size: 15px; margin-top: 5px;">Платье с орнаментами</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p>38 990тенге</p>
+    </a>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/accessories/tproduct/792507789-331598088642-ryukzak-iz-poliuretana">
+        <img src="https://optim.tildacdn.com/stor3132-3538-4466-a134-373065303933/-/format/webp/72696947.jpg" alt="" />
+        <h4 style=" font-size: 15px; margin-top: 5px;">Рюкзак из полиуретана</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>21 490тенге</p>
+      </div>
+    </a>
+    </div>
+  
+    <div class="row">
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/accessories/tproduct/792507789-376912330622-panama-iz-hlopka">
+        <img src="https://optim.tildacdn.com/stor6466-3934-4831-b334-353535393333/-/format/webp/34890831.jpg" alt="" />
+        <h4 style=" font-size: 15px; margin-top: 5px;">Панама из хлопка</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>7 990тенге</p>
+    </a>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/men/tproduct/792507046-596896762052-zimnyaya-kurtka">
+        <img src="https://optim.tildacdn.com/stor3963-3562-4137-b938-313264306637/-/format/webp/81472124.png" alt="" />
+        <h4 style=" font-size: 15px; margin-top: 5px;">Зимняя куртка <span style="margin-left: 3px;" class="badge rounded-pill text-bg-danger">new</span></h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>59 490тенге</p>
+    </a>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/men/tproduct/792507046-658942007752-dzhinsi-zauzhennie">
+        <img src="https://optim.tildacdn.com/stor3366-3936-4534-a364-383133633638/-/format/webp/55221349.jpg" alt="" />
+        <h4 style=" font-size: 15px; margin-top: 5px;">Джинсы зауженные</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p>29 990тенге</p>
+    </a>
+      </div>
+  
+      <div class="col-4">
+        <a href="https://globalnomadswear.com/women/tproduct/792506629-669831061432-bazovie-futbolki-global-nomads">
+        <img src="https://optim.tildacdn.com/stor6531-3931-4932-b265-656639613637/-/format/webp/91161901.jpg" alt="" />
+        <h4 style=" font-size: 15px; margin-top: 5px;">Базовые футболки Global Nomads</h4>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p>9 990тенге</p>
+        </a>
+      </div>
+      </div>
+    </div>
+   
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Уыспешно</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Успешно оформлено!
+            <br>
+            <br>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div style="display: contents;">
+    <button style="margin-right: 50px; margin-left: 420px;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      оформить
+    </button>
+    <p style="float: left; margin-left: 50px;">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+        Отменить
+      </button>
+    </p>
+ </div>
+ <div style="min-height: 120px;" >
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      Успешно отменено.
+    </div>
+  </div>
+</div>
+    <div class="page-btn">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>&#8594;</span>
+    </div>
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Shop Points</h2>
+  
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://static.tildacdn.pro/tild3763-3737-4437-a363-613238623631/IMML7647.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="color: black;">Mega Silk way</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="profile.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small style="color: black;">Astana</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small style="color: black;">1 year</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://static.tildacdn.pro/tild6532-3832-4336-b739-303631333136/IMML6819.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="color: black;">Mega 2 Alma-Ata</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="profile.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small style="color: black;">Almaty</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small style="color: black;">6mt</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://static.tildacdn.pro/tild6561-3833-4739-b664-623033383863/IMML6780.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" style="color: black;">Abu Dhabi plaza</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="profile.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small style="color: black;">Astana</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small style="color: black;">10d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Технологии и материалы
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            Значительную долю коллекции бренда составляют изделия из трикотажа. Для его производства мы используем хлопок самого высокого качества — ПЕНЬЕ. <br>
+
+Фабрика оснащена самым современным оборудованием, что позволяет добиться безукоризненного качества. Подтверждением этому служит многолетнее сотрудничество с десятками глобальных брендов, а сама фабрика — единственная в Казахстане имеет международный сертификат ILS
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            ПЛАНЫ РАЗВИТИЯ
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Несмотря на то, что бренд был создан в 2021 году, на момент осени 2022 года открыто 3 монобрендовых магазина, 18 корнеров в мультибрендовых магазинах, 5 корнеров в мультибрендах дают 60% от выручки этих магазинов. За первые 2 года концепция марки прошла успешное тестирование в реальной коммерческой деятельности, а монобрендовый формат подтвердил инвестиционную привлекательность с рентабельностью значительно выше кредитных ставок банков.<br>
+
+С весны 2023 года откроются несколько концептуальных магазинов в новом формате до 200 кв. м. LIFESTYLE TOTALLOOK. Ассортиментная матрица увеличится втрое, полностью удовлетворяя потребности современной семьи во всех категориях одежды CASUAL OUTDOOR.<br>
+
+Заботясь о партнерах, бренд не планирует открывать продажи на маркет-плейсах, а интернет-магазин будет иметь имиджевую функцию, его продажи будут скоординированы с региональными партнерами.<br>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            ФРАНЧАЙЗИНг И ОПТ
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Бренд приглашает к партнерству профессиональных баеров и коммерсантов в розничной сфере и предлагает гибкую систему взаимовыгодных отношений. <br>
+
+Есть возможность протестировать товар и сделать оптовую закупку, открыть корнер в мультибренде или занять лидерскую позицию в своем городе, открыв монобрендовый магазин, или стать региональным партнером.<br>
+
+Для каждой формы партнерства — свои уникальные условия и поддержка бренда.<br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">читать больше</button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">полная информация</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Global Nomads — это конструктор образа будущего, в котором одежда, обувь, аксессуары, интерьер создают целостный глобальный образ жизни неономадов, — современных кочевников, свободно путешествующих по безграничным пространствам земных континентов и цифровых метавселенных.
+
+      Наша целевая аудитория и наш идейный код — это поколение миллениалов и его новая парадигма потребления: ответственность вместо одноразовости, смыслы вместо пустоты, самобытный стиль вместо краткосрочной моды.
+      
+      Мы создали наш бренд в Казахстане и знаем о путешествиях всё, потому что кочевье — это тысячелетний код цивилизации Великой Степи, символику которой мы «зашиваем» в коллекции бренда.</p>
+  </div>
+</div>
+    <div class="container px-4 py-5" id="icon-grid">
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4" src="logoblack.png" alt="" width="72" height="57">
+        <h1 class="display-5 fw-bold text-body-emphasis">About NomadStore</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4"> это конструктор образа будущего, в котором одежда, обувь, аксессуары, интерьер создают целостный глобальный образ жизни неономадов, — современных кочевников, свободно путешествующих по безграничным пространствам земных континентов и цифровых метавселенных.</p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a href="https://disk.yandex.ru/d/hReHCU4f4fYsaQ" ><button type="button" class="btn btn-primary btn-lg px-4 gap-3">download presentation</button></a>
+          </div>
+        </div>
+      </div>
+      <h2 class="pb-2 border-bottom">contacts</h2>
+  
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">ТОО «GLOBAL NOMADS»</h3>
+            <p>050052, Республика Казахстан, г. Алматы, Турксибский район, Сауранбаева, дом 4</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Юрий Приходько</h3>
+            <p>Ритейл директор<br>   
+              +7 778 888 71 31</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Екатерина Порозова</h3>
+            <p>Коммерческий директор<br>
+              +7 707 889 39 70</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal text-body-emphasis">Monthly support</h1>
+    </div>
+    <main>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Бесплатно</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">0<small class="text-body-secondary fw-light">/мес</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>+кэшбеки</li>
+                <li>+скидки на товары</li>
+                <li>+быстрая помощь</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Попробвать</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Про</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">2390<small class="text-body-secondary fw-light">/мес</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>+10 слота товаров</li>
+                <li>+Быстрая доставка</li>
+                <li>+Шанс на лимит вещи</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Купить</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal"  style="color: black;">+Про</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">5990<small class="text-body-secondary fw-light">/мес</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>+30 слота товаров</li>
+                <li>+Получение лимит вещ.</li>
+                <li>+Почетное звание шопоголик</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Купить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+
+    
+    <div class="loader-line"></div>
+  </div>
+  <ul class="menu bottomRight">
+    <li class="share top">
+      <i class="fa fa-share-alt"></i>
+      <ul class="submenu">
+        <li>
+          <a href="#" class="facebook">
+            <i class="fa fa-brands fa-facebook"><ion-icon name="logo-facebook"></ion-icon></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="twitter">
+            <i class="fa fa-brands fa-twitter"><ion-icon name="logo-twitter"></ion-icon></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="googlePlus">
+            <i class="fa fa-brands fa-google-plus"><ion-icon name="logo-google"></ion-icon></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/hqnters/" class="instagram">
+            <i class="fa fa-brands fa-instagram"><ion-icon name="logo-instagram"></ion-icon></i>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <footer>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and iso mobile phone.</p>
+          <div class="app-logo">
+            <img src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="" />
+            <img src="https://i.ibb.co/hVM4X2p/app-store.png" alt="" />
+          </div>
+        </div>
+  
+        <div class="footer-col-2">
+          <img src="logowhite.png" alt="" />
+         
+        </div>
+  
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Coupons</a></li>
+            <li><a href="#">Blog Post</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Join Affiliate</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col-4">
+          <h3>Follow us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="https://www.instagram.com/hqnters/">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Copyright &copy; 2024 - Nomad Store</p>
+    </div>
+  </div>
+</div>
+  </footer>
+  <script class="modal">const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+    
+    if (toastTrigger) {
+      const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+      toastTrigger.addEventListener('click', () => {
+        toastBootstrap.show()
+      })
+    }</script>
+  <script src="bootstrap.js" ></script>
+  <script>
+    function openLeftMenu() {
+  document.getElementById("leftMenu").style.display = "block";
+}
+
+function closeLeftMenu() {
+  document.getElementById("leftMenu").style.display = "none";
+}
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
